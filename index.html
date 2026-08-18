@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regal de Sant per l'Helena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bricolage+Grotesque:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape shape-1" aria-hidden="true"></div>
+    <div class="bg-shape shape-2" aria-hidden="true"></div>
+
+    <main class="gift-page">
+      <section class="hero">
+        <p class="eyebrow">Regal de Sant · Barcelona</p>
+        <h1>Helena, aquest any <span>tu tries</span> la funció.</h1>
+        <p class="intro">
+          Tinc ganes de celebrar el teu sant amb una nit especial de teatre.
+          Aquí tens 4 obres brutals a Barcelona. Escull la que et faci més
+          il·lusió i la reservem.
+        </p>
+      </section>
+
+      <section class="cards" aria-label="Opcions d'obres de teatre">
+        <article class="show-card" data-show="Angle Mort">
+          <div class="show-tag">Comedia de proximitat</div>
+          <h2>Angle Mort</h2>
+          <figure class="show-photo">
+            <img
+              src="https://www.teatrebarcelona.com/wp-content/uploads/2021/01/TEATRE-BARCELONA-CARTELL-ANGLE-MORT-5TEMPORADA.jpg"
+              alt="Cartell d'Angle Mort"
+            />
+            <figcaption>Foto: Teatre Barcelona</figcaption>
+          </figure>
+          <p>
+            Una comedia intel.ligent i sorprenent amb ritme rapid, ideal per
+            una nit de riures amb tensio teatral.
+          </p>
+          <ul>
+            <li>Sala Versus Glories</li>
+            <li>Dates: del 05.08.26 al 13.09.26</li>
+            <li>Durada: 100 minuts</li>
+          </ul>
+          <div class="show-actions">
+            <div class="show-links">
+              <a
+                class="show-link"
+                href="https://www.teatrebarcelona.com/espectacle/angle-mort"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Fitxa oficial</a
+              >
+              <a
+                class="show-link"
+                href="https://www.youtube.com/user/barcelonateatre"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Video YouTube</a
+              >
+            </div>
+            <button class="select-btn" type="button" onclick="selectShow('Angle Mort')">Escullo aquesta</button>
+          </div>
+        </article>
+
+        <article class="show-card" data-show="La Truita">
+          <div class="show-tag">Comedia teatral</div>
+          <h2>La Truita</h2>
+          <figure class="show-photo">
+            <img
+              src="https://www.barcelona.cat/grec/sites/default/files/styles/header/public/2026-04/LA%20TRUITA%20Bit%C3%B2%20_%20Marta%20Mas_0.jpg.webp?h=c461a26e&itok=0p-BtFMy"
+              alt="Escena de La Truita al Teatre Poliorama"
+            />
+            <figcaption>Foto: Teatre Poliorama / Marta Mas</figcaption>
+          </figure>
+          <p>
+            Una proposta escenica amb molta personalitat al Poliorama, ideal
+            per una nit especial al centre de Barcelona.
+          </p>
+          <ul>
+            <li>Teatre Poliorama</li>
+            <li>Dates: del 27.06.26 al 18.10.26</li>
+            <li>Durada: 120 minuts aprox.</li>
+          </ul>
+          <div class="show-actions">
+            <div class="show-links">
+              <a
+                class="show-link"
+                href="https://www.teatrepoliorama.com/es/programacion/c/899-la-truita.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Fitxa oficial</a
+              >
+              <a
+                class="show-link"
+                href="https://www.youtube.com/watch?v=ajXWipofy7A"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Video YouTube</a
+              >
+            </div>
+            <button class="select-btn" type="button" onclick="selectShow('La Truita')">Escullo aquesta</button>
+          </div>
+        </article>
+
+        <article class="show-card" data-show="Bons i Dolents">
+          <div class="show-tag">Comedia satirica</div>
+          <h2>Bons i Dolents</h2>
+          <figure class="show-photo">
+            <img
+              src="img/9_2_367219_1782377745912.jpg"
+              alt="Cartell de Bons i Dolents al Teatre Condal"
+            />
+            <figcaption>Foto: Teatre Condal</figcaption>
+          </figure>
+          <p>
+            Una obra amb humor, ritme i molta mala bava fina per passar una nit
+            de teatre super divertida.
+          </p>
+          <ul>
+            <li>Teatre Condal</li>
+            <li>Dates: del 06.10.26 al 01.11.26</li>
+            <li>Durada: per confirmar</li>
+          </ul>
+          <div class="show-actions">
+            <div class="show-links">
+              <a
+                class="show-link"
+                href="https://tickets.oneboxtds.com/teatrecondal/events/57604"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Fitxa oficial</a
+              >
+              <a
+                class="show-link"
+                href="https://www.youtube.com/watch?v=cZx3hoYfGno"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Video YouTube</a
+              >
+            </div>
+            <button class="select-btn" type="button" onclick="selectShow('Bons i Dolents')">Escullo aquesta</button>
+          </div>
+        </article>
+
+        <article class="show-card" data-show="Primera llei de Newton">
+          <div class="show-tag">Comedia de reflexio</div>
+          <h2>Primera llei de Newton</h2>
+          <figure class="show-photo">
+            <img
+              src="img/teatre-barcelona-primera-llei-de-newton.png"
+              alt="Cartell de Primera llei de Newton"
+            />
+            <figcaption>Foto: Teatre Barcelona</figcaption>
+          </figure>
+          <p>
+            Comedia amb molta energia que barreja humor i dilemes etics sobre
+            educacio i oportunitats.
+          </p>
+          <ul>
+            <li>La Villarroel</li>
+            <li>Dates: del 02.09.26 al 04.10.26</li>
+            <li>Durada: 90 minuts</li>
+          </ul>
+          <div class="show-actions">
+            <div class="show-links">
+              <a
+                class="show-link"
+                href="https://www.teatrebarcelona.com/espectacle/primera-llei-de-newton"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Fitxa oficial</a
+              >
+              <a
+                class="show-link"
+                href="https://www.youtube.com/watch?v=wl3ucNJdLzo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Video YouTube</a
+              >
+            </div>
+            <button class="select-btn" type="button" onclick="selectShow('Primera llei de Newton')">Escullo aquesta</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="choice" aria-live="polite">
+        <p class="choice-label">La teva elecció:</p>
+        <p id="selectedShow" class="choice-value">Encara no has escollit cap obra.</p>
+        <p id="notifyMarti" class="choice-label" hidden></p>
+        <button id="martiBtn" class="marti-btn" type="button" hidden>
+          Contacta amb en Marti
+        </button>
+        <div id="finalGallery" class="final-gallery is-hidden" aria-label="Galeria final">
+          <img src="img/hm/IMG20260718093022.jpg" alt="Record 1" />
+          <img src="img/hm/IMG20260718102014.jpg" alt="Record 2" />
+          <img src="img/hm/IMG20260730134221.jpg" alt="Record 3" />
+          <img src="img/hm/IMG20260730210258.jpg" alt="Record 4" />
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const martiBtn = document.getElementById('martiBtn');
+
+      function selectShow(showName) {
+        const hero = document.querySelector('.hero');
+        const cardsSection = document.querySelector('.cards');
+        const choiceLabel = document.querySelector('.choice-label');
+        const cards = document.querySelectorAll('.show-card');
+        const result = document.getElementById('selectedShow');
+        const notify = document.getElementById('notifyMarti');
+        const finalGallery = document.getElementById('finalGallery');
+
+        cards.forEach((card) => {
+          card.classList.toggle('selected', card.getAttribute('data-show') === showName);
+        });
+
+        if (result) {
+          result.textContent = showName;
+          result.classList.add('is-hidden');
+        }
+
+        if (choiceLabel) {
+          choiceLabel.classList.add('is-hidden');
+        }
+
+        if (notify) {
+          notify.textContent = 'Felicitats, felicitaats i felicitaaats! Contacta amb en SuperMarti per informar de la decisió :P';
+          notify.hidden = false;
+        }
+
+        if (hero) {
+          hero.classList.add('is-hidden');
+        }
+
+        if (cardsSection) {
+          cardsSection.classList.add('is-hidden');
+        }
+
+        if (martiBtn) {
+          martiBtn.hidden = true;
+          martiBtn.setAttribute('data-show', showName);
+        }
+
+        if (finalGallery) {
+          finalGallery.classList.remove('is-hidden');
+        }
+
+        document.body.classList.add('final-state');
+      }
+
+      if (martiBtn) {
+        martiBtn.addEventListener('click', async () => {
+          const showName = martiBtn.getAttribute('data-show') || 'la funcio escollida';
+          const notify = document.getElementById('notifyMarti');
+          const message = `Hola Marti! He escollit ${showName}.`;
+
+          try {
+            await navigator.clipboard.writeText(message);
+            if (notify) {
+              notify.textContent = 'Missatge copiat. Ara envia-l hi al Marti.';
+            }
+          } catch (error) {
+            if (notify) {
+              notify.textContent = 'Contacta amb en Marti i explica-li la teva eleccio.';
+            }
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
